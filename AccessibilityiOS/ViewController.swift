@@ -14,7 +14,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
     }
     
@@ -23,7 +22,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! FoodTableViewCell
+        
+        cell.photoImageView.accessibilityLabel = "Food image"
+        
+        cell.titleLabel.text = "What is Lorem Ipsum? "
+        cell.titleLabel.font = UIFont.preferredFont(forTextStyle: .body)
+        cell.titleLabel.adjustsFontForContentSizeCategory = true
+        
+        cell.subtitleLabel.text =  "\(indexPath.row + 1)"
+        cell.subtitleLabel.font = UIFont.preferredFont(forTextStyle: .body)
+        cell.subtitleLabel.adjustsFontForContentSizeCategory = true
+
         
         return cell
     }

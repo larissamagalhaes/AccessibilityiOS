@@ -15,6 +15,7 @@
 		4EA9A2A621B5BC23000A580C /* AccessibilityiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9A2A521B5BC23000A580C /* AccessibilityiOSTests.swift */; };
 		4EA9A2B121B5BC23000A580C /* AccessibilityiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9A2B021B5BC23000A580C /* AccessibilityiOSUITests.swift */; };
 		4EA9A2C121B5C326000A580C /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9A2C021B5C326000A580C /* FoodTableViewCell.swift */; };
+		4EA9A2C321B5DA51000A580C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9A2C221B5DA51000A580C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		4EA9A2B021B5BC23000A580C /* AccessibilityiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityiOSUITests.swift; sourceTree = "<group>"; };
 		4EA9A2B221B5BC23000A580C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4EA9A2C021B5C326000A580C /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
+		4EA9A2C221B5DA51000A580C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				4EA9A29721B5BC23000A580C /* Assets.xcassets */,
 				4EA9A29921B5BC23000A580C /* LaunchScreen.storyboard */,
 				4EA9A29C21B5BC23000A580C /* Info.plist */,
+				4EA9A2C221B5DA51000A580C /* DetailViewController.swift */,
 			);
 			path = AccessibilityiOS;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				4EA9A29321B5BC12000A580C /* ViewController.swift in Sources */,
 				4EA9A29121B5BC12000A580C /* AppDelegate.swift in Sources */,
 				4EA9A2C121B5C326000A580C /* FoodTableViewCell.swift in Sources */,
+				4EA9A2C321B5DA51000A580C /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

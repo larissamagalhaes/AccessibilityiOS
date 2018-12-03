@@ -22,29 +22,31 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="nSw-bZ-Eye" customClass="FoodTableViewCell" customModule="AccessibilityiOS" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="118" id="nSw-bZ-Eye" customClass="FoodTableViewCell" customModule="AccessibilityiOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="118"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nSw-bZ-Eye" id="XbA-KO-fbY">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="117.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_image" translatesAutoresizingMaskIntoConstraints="NO" id="1WI-qS-GHp">
-                                                    <rect key="frame" x="8" y="10" width="80" height="80"/>
+                                                <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_image" translatesAutoresizingMaskIntoConstraints="NO" id="1WI-qS-GHp">
+                                                    <rect key="frame" x="8" y="9" width="100" height="100"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <bool key="isElement" value="YES"/>
+                                                    </accessibility>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="80" id="8I8-Wd-Wfb"/>
+                                                        <constraint firstAttribute="height" constant="100" id="8I8-Wd-Wfb"/>
                                                         <constraint firstAttribute="width" secondItem="1WI-qS-GHp" secondAttribute="height" id="8X6-xf-EWj"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Lorem Ipsum?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAt-Wp-USZ">
-                                                    <rect key="frame" x="96" y="8" width="271" height="21"/>
+                                                    <rect key="frame" x="116" y="8" width="251" height="20"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32k-TO-WJL">
-                                                    <rect key="frame" x="96" y="33" width="271" height="58.5"/>
-                                                    <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32k-TO-WJL">
+                                                    <rect key="frame" x="116" y="32" width="251" height="0.0"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
@@ -96,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="1608.8" y="25.637181409295355"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="uuH-gU-pbg">
             <objects>
-                <viewController id="ar5-YU-jeB" sceneMemberID="viewController">
+                <viewController id="ar5-YU-jeB" customClass="DetailViewController" customModule="AccessibilityiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WO7-X9-Yoa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,8 +109,11 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enc-OD-lyu">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_image" translatesAutoresizingMaskIntoConstraints="NO" id="P7n-sQ-kZn">
+                                    <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_image" translatesAutoresizingMaskIntoConstraints="NO" id="P7n-sQ-kZn">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="fba-wn-DXF"/>
                                         </constraints>
@@ -154,6 +159,11 @@ It is a long established fact that a reader will be distracted by the readable c
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="43u-fI-pjG"/>
                     </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="P7n-sQ-kZn" id="0WP-Ow-96O"/>
+                        <outlet property="subtitleLabel" destination="dLo-O4-1GG" id="sKg-pm-uHV"/>
+                        <outlet property="titleLabel" destination="f7g-PV-6mZ" id="laU-M1-1aG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QSb-aZ-gOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
