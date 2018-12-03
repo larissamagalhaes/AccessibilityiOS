@@ -14,6 +14,7 @@
 		4EA9A29B21B5BC23000A580C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA9A29921B5BC23000A580C /* LaunchScreen.storyboard */; };
 		4EA9A2A621B5BC23000A580C /* AccessibilityiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9A2A521B5BC23000A580C /* AccessibilityiOSTests.swift */; };
 		4EA9A2B121B5BC23000A580C /* AccessibilityiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9A2B021B5BC23000A580C /* AccessibilityiOSUITests.swift */; };
+		4EA9A2C121B5C326000A580C /* FoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA9A2C021B5C326000A580C /* FoodTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4EA9A2AC21B5BC23000A580C /* AccessibilityiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AccessibilityiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA9A2B021B5BC23000A580C /* AccessibilityiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityiOSUITests.swift; sourceTree = "<group>"; };
 		4EA9A2B221B5BC23000A580C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EA9A2C021B5C326000A580C /* FoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				4EA9A29021B5BC12000A580C /* AppDelegate.swift */,
 				4EA9A29221B5BC12000A580C /* ViewController.swift */,
+				4EA9A2C021B5C326000A580C /* FoodTableViewCell.swift */,
 				4EA9A29421B5BC12000A580C /* Main.storyboard */,
 				4EA9A29721B5BC23000A580C /* Assets.xcassets */,
 				4EA9A29921B5BC23000A580C /* LaunchScreen.storyboard */,
@@ -258,6 +261,7 @@
 			files = (
 				4EA9A29321B5BC12000A580C /* ViewController.swift in Sources */,
 				4EA9A29121B5BC12000A580C /* AppDelegate.swift in Sources */,
+				4EA9A2C121B5C326000A580C /* FoodTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

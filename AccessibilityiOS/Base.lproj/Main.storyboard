@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KSN-OX-7Xs">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,172 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AccessibilityiOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Xes-uU-yU4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="100" id="nSw-bZ-Eye" customClass="FoodTableViewCell" customModule="AccessibilityiOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nSw-bZ-Eye" id="XbA-KO-fbY">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_image" translatesAutoresizingMaskIntoConstraints="NO" id="1WI-qS-GHp">
+                                                    <rect key="frame" x="8" y="10" width="80" height="80"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="80" id="8I8-Wd-Wfb"/>
+                                                        <constraint firstAttribute="width" secondItem="1WI-qS-GHp" secondAttribute="height" id="8X6-xf-EWj"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Lorem Ipsum?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAt-Wp-USZ">
+                                                    <rect key="frame" x="96" y="8" width="271" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32k-TO-WJL">
+                                                    <rect key="frame" x="96" y="33" width="271" height="58.5"/>
+                                                    <string key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1WI-qS-GHp" firstAttribute="leading" secondItem="XbA-KO-fbY" secondAttribute="leading" constant="8" id="2VS-pQ-8JU"/>
+                                                <constraint firstItem="32k-TO-WJL" firstAttribute="top" secondItem="pAt-Wp-USZ" secondAttribute="bottom" constant="4" id="40y-E2-gcE"/>
+                                                <constraint firstItem="pAt-Wp-USZ" firstAttribute="leading" secondItem="1WI-qS-GHp" secondAttribute="trailing" constant="8" id="7Ao-DQ-f1b"/>
+                                                <constraint firstItem="1WI-qS-GHp" firstAttribute="centerY" secondItem="XbA-KO-fbY" secondAttribute="centerY" id="8PQ-WH-10i"/>
+                                                <constraint firstAttribute="trailing" secondItem="pAt-Wp-USZ" secondAttribute="trailing" constant="8" id="Ch7-xO-1yW"/>
+                                                <constraint firstItem="pAt-Wp-USZ" firstAttribute="top" secondItem="XbA-KO-fbY" secondAttribute="top" constant="8" id="TK9-kp-IhW"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="32k-TO-WJL" secondAttribute="bottom" constant="8" id="XFk-Gn-s3s"/>
+                                                <constraint firstItem="32k-TO-WJL" firstAttribute="trailing" secondItem="pAt-Wp-USZ" secondAttribute="trailing" id="e2p-AW-6nP"/>
+                                                <constraint firstItem="1WI-qS-GHp" firstAttribute="top" relation="greaterThanOrEqual" secondItem="XbA-KO-fbY" secondAttribute="top" constant="8" id="gb9-br-n4y"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="1WI-qS-GHp" secondAttribute="bottom" constant="8" id="vbD-73-2pQ"/>
+                                                <constraint firstItem="32k-TO-WJL" firstAttribute="leading" secondItem="pAt-Wp-USZ" secondAttribute="leading" id="xag-zs-H5j"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="photoImageView" destination="1WI-qS-GHp" id="Faa-b6-ZcR"/>
+                                            <outlet property="subtitleLabel" destination="32k-TO-WJL" id="IAX-GB-n8Z"/>
+                                            <outlet property="titleLabel" destination="pAt-Wp-USZ" id="2f8-yq-JYx"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="2lR-xh-pIY"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="FVf-DB-6P7"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xes-uU-yU4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1S9-rG-AfN"/>
+                            <constraint firstItem="Xes-uU-yU4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="QEi-8v-z3w"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xes-uU-yU4" secondAttribute="bottom" id="acC-25-RNS"/>
+                            <constraint firstItem="Xes-uU-yU4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="rEw-47-0VU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="IqU-K0-njj"/>
+                    <connections>
+                        <outlet property="tableView" destination="Xes-uU-yU4" id="OQf-D7-lpp"/>
+                        <segue destination="ar5-YU-jeB" kind="show" identifier="detailFoodSegue" id="sE2-Hb-OcI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1608.8" y="25.637181409295355"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="uuH-gU-pbg">
+            <objects>
+                <viewController id="ar5-YU-jeB" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WO7-X9-Yoa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="enc-OD-lyu">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food_image" translatesAutoresizingMaskIntoConstraints="NO" id="P7n-sQ-kZn">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="fba-wn-DXF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is Lorem Ipsum?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7g-PV-6mZ">
+                                        <rect key="frame" x="8" y="216" width="359" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLo-O4-1GG">
+                                        <rect key="frame" x="8" y="245" width="359" height="434.5"/>
+                                        <mutableString key="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+Why do we use it?
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="dLo-O4-1GG" secondAttribute="bottom" constant="8" id="4Ni-RQ-cv8"/>
+                                    <constraint firstItem="P7n-sQ-kZn" firstAttribute="top" secondItem="enc-OD-lyu" secondAttribute="top" id="67C-aV-2PM"/>
+                                    <constraint firstItem="dLo-O4-1GG" firstAttribute="leading" secondItem="f7g-PV-6mZ" secondAttribute="leading" id="Dtg-p3-i0Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="P7n-sQ-kZn" secondAttribute="trailing" id="FJL-Ox-9Pd"/>
+                                    <constraint firstItem="dLo-O4-1GG" firstAttribute="top" secondItem="f7g-PV-6mZ" secondAttribute="bottom" constant="8" id="Lr8-1D-RGU"/>
+                                    <constraint firstItem="f7g-PV-6mZ" firstAttribute="top" secondItem="P7n-sQ-kZn" secondAttribute="bottom" constant="16" id="Myp-G8-djl"/>
+                                    <constraint firstAttribute="trailing" secondItem="f7g-PV-6mZ" secondAttribute="trailing" constant="8" id="PYb-8i-QbL"/>
+                                    <constraint firstItem="P7n-sQ-kZn" firstAttribute="centerX" secondItem="enc-OD-lyu" secondAttribute="centerX" id="SwU-RS-DGB"/>
+                                    <constraint firstItem="f7g-PV-6mZ" firstAttribute="leading" secondItem="enc-OD-lyu" secondAttribute="leading" constant="8" id="d09-iE-4pC"/>
+                                    <constraint firstItem="dLo-O4-1GG" firstAttribute="trailing" secondItem="f7g-PV-6mZ" secondAttribute="trailing" id="qVa-Ji-raF"/>
+                                    <constraint firstItem="P7n-sQ-kZn" firstAttribute="leading" secondItem="enc-OD-lyu" secondAttribute="leading" id="sys-06-VF1"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="43u-fI-pjG" firstAttribute="top" secondItem="enc-OD-lyu" secondAttribute="top" id="JSn-cI-baE"/>
+                            <constraint firstItem="enc-OD-lyu" firstAttribute="trailing" secondItem="43u-fI-pjG" secondAttribute="trailing" id="Qhb-JL-oxf"/>
+                            <constraint firstItem="43u-fI-pjG" firstAttribute="leading" secondItem="enc-OD-lyu" secondAttribute="leading" id="mBO-Et-kHV"/>
+                            <constraint firstItem="enc-OD-lyu" firstAttribute="bottom" secondItem="43u-fI-pjG" secondAttribute="bottom" id="qak-hO-j7L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="43u-fI-pjG"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QSb-aZ-gOZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2472.8000000000002" y="25.637181409295355"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ylU-CI-idr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KSN-OX-7Xs" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Tbl-Yz-QsB">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="u6t-P6-g8X"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w6c-OI-eWX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="658" y="26"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="food_image" width="204" height="136"/>
+    </resources>
 </document>
